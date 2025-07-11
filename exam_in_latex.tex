@@ -4,9 +4,22 @@
 %\documentclass[12pt,answers,addpoints]{exam}
 
 
-
+\usepackage{graphicx,lastpage, subcaption}
+\usepackage{upgreek}
+\usepackage{censor}
+\usepackage{subcaption}
+\usepackage{mathtools}
 \usepackage{amsmath}
-\usepackage{graphicx}
+\usepackage[export]{adjustbox} % <-- it loads graphicx and provides the key 'valign'
+\usepackage{caption}
+\usepackage[shortlabels]{enumitem}
+
+%Enable degree symbol in math mode
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{gensymb}
+
 \begin{document}
 
 %% Some Formatting Options:
@@ -74,34 +87,26 @@ Good luck!
 \end{coverpages}
 
 \pagestyle{headandfoot} \extraheadheight{.25in} 
-\firstpageheader{} {My University\\ This Semester \\ Final Examination \\ Economics 101} {} 
+\firstpageheader{} {Mindanao State University - General Santos City\\ College of Engineering\\ Summer 2025 \\ 2nd Chapter Examination \\ ENS 162 - Dynamics of Rigid Bodies} {} 
 \footer{} {Page \thepage\ of \numpages} {\iflastpage{End of exam.}{Please go on to the next page\ldots}}
 
 
 
 \begin{questions}
-\fullwidth{\Large \textbf{Short Questions}} 
+%\fullwidth{\Large \textbf{Short Questions}} 
 
-\uplevel{No partial credit will be awarded.  Clearly circle \emph{one} choice
-for each of the multiple-choice questions.  }
+\uplevel{\textbf{INSTRUCTIONS:} For the following problems, use four (4) significant digits for intermediate numerical results
+and three (3) significant digits for the final answer. Final answers must be boxed.}
 
-\myquestion[5] A small coffee company roasts coffee beans in its shop. 
-The {\em total} cost of roasting coffee beans is $3q^2$ when
-$q$ pounds are roasted. 
-The smell of roasting beans imposes costs on the 
-company's neighbors. The {\em total} amount that neighbors 
-would be willing to pay to have the shop stop roasting 
-altogether is $\frac{3}{2} \cdot q^2$. The company sells its output in a 
-competitive market at \$36 per pound, so that its total revenue is $36q$. What is the 
-socially efficient amount of coffee for the company to 
-roast? 
-	\begin{choices}
-	\choice 2 pounds. 
-	\CorrectChoice 4 pounds.
-	\choice 6 pounds.
-	\choice 8 pounds.
-	\choice 10 pounds.
-	\end{choices}
+\question[15] A skateboarder of mass $M$, traverses a half-pipe in the shape of the curve $y=\frac{1}{4}x^2$. 
+Assuming no friction,
+\begin{parts}
+	\part[5] Draw a free body diagram of the skateboarder at point A, with coordinates (0,0).
+	\part[5] Determine an expression for the magnitude and direction of $a_n$, the acceleration of the 
+	mass normal to the curve at point A.
+	\part[5] Calculate the normal force acting at point A when $M = 50\,kg$ and $v_A = 10\,m/s$.
+\end{parts}
+	 
 
 \myquestion[5] A monopolist has discovered that the inverse demand function of a
 person with income M for the monopolist’s product is $p = 0.002M - q$. The
